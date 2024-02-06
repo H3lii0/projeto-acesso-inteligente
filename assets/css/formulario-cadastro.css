@@ -1,0 +1,120 @@
+#form1{
+    margin: 20px auto;
+    width: 500px; 
+    height: 600px; 
+    -webkit-border-radius: 8px/7px; 
+    -moz-border-radius: 8px/7px; 
+    border-radius: 8px/7px; 
+    background-color: #ebebeb; 
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border: solid 1px #cbc9c9;
+  
+}
+.input-group{
+    padding-bottom: 10px;
+}
+.input-group .input-group-text{
+    background-color: #367CDD;
+    color: black;
+}
+.boxformat{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+.textform{
+  padding-top: 10px;
+  letter-spacing: 0.1em;
+  text-transform:uppercase;
+  font-size: 30px;
+}
+div.radio-container {
+    background-color:#367CDD;
+    display: inline-block;
+    border: 2px solid#367CDD;
+    
+  }
+  
+  div.radio-container input[type=radio] {
+    opacity: 0;
+    display: none;
+    margin: 0;
+    outline: none;
+    
+  }
+  
+  div.radio-container input[type="radio"]:checked+label {
+    background-color:#367CDD;
+    color: white;
+    animation-name: radio-active;
+    animation-duration: 0.2s;
+    
+  }
+  
+  @keyframes radio-active {
+    from {
+        transform: scale(0.6, 0.6);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+  }
+  
+  div.radio-container label {
+   
+    padding: 0.5em;
+    cursor: pointer;
+    background: none;
+    display: inline-block;
+    outline: none;
+    letter-spacing: 0.1em;
+    background-color: white;
+    color: black;
+    transition: all ease-in-out 0.1s;
+    height: 40px;
+   
+  }
+ .radio-container{
+    margin-left: 75px;
+}
+button{
+  
+}
+.button {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  padding: 6px 25px 0px 20px;
+  margin: 10px 120px 0px 0px;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  height: 35px; 
+
+  background-color: #367CDD; 
+  -webkit-box-shadow: 0 3px rgba(58,87,175,.75); 
+  -moz-box-shadow: 0 3px rgba(58,87,175,.75); 
+  box-shadow: 0 3px rgba(58,87,175,.75);
+  transition: all 0.1s linear 0s; 
+  top: 0px;
+  position: relative;
+  border-style:none;
+}
+
+.button:hover {
+  top: 3px;
+  background-color:#3a57af;
+  -webkit-box-shadow: none; 
+  -moz-box-shadow: none; 
+  box-shadow: none;
+  
+}
+
+
+  
+
+

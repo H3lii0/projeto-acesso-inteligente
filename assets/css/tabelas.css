@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+#tabela {
+    height: 100%;
+    overflow: auto;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: auto;
+
+}
+
+thead th{
+    position:sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th, td{
+    
+    padding: 7px 15px;
+    word-break: break-all;
+    margin-top: 7px;
+    /* text-align: center; */
+    vertical-align: middle;
+    text-align: center;
+}
+
+.imagem{
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+
+}
+
+tr:hover td{
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
