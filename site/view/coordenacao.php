@@ -242,7 +242,11 @@
                     </div>
                 </div>
 
-
+                <div class="row">
+                    <div class="col-sm-3"><a type="button" class="btn btn-outline-primary" href="<?= constant("URL_LOCAL_SITE") ?>?pagina=lista-aluno">Cadastro Biometrico</a></div>
+                    <div class="col-sm-3"><a type="button" class="btn btn-outline-primary position-relative float-right" href="<?= constant("URL_LOCAL_SITE") ?>?pagina=formulario-cadastro">Cadastro de alunos</a></div>
+                    <div class="col-sm-3"><a type="button" class="btn btn-outline-primary position-relative float-right" href="<?= constant("URL_LOCAL_SITE") ?>?pagina=lista-total">Lista</a></div>
+                </div>
 
                 <!-- Tabela que será gerada com as informações de quando o aluno entrar no sistema na entrada da escola  -->
                 <button id="botaoTurma" class=" mt-5 btn btn-outline-primary">Mostrar lista</button>

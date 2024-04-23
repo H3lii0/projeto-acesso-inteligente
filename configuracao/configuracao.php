@@ -11,7 +11,7 @@ date_default_timezone_set('America/Sao_Paulo');
  * Definindo constante URL_LOCAL
  * Caminho absoluto
  */
-define("URL_LOCAL_BASE","http://localhost/Acesso_inteligente_ETE/");
+define("URL_LOCAL_BASE","http://localhost/projeto-acesso-inteligente/");
 define("URL_LOCAL_IMG",constant("URL_LOCAL_BASE")."assets/img/");
 define("URL_LOCAL_SITE",constant("URL_LOCAL_BASE")."site/");
 define("URL_LOCAL_ADM",constant("URL_LOCAL_BASE")."adm/");

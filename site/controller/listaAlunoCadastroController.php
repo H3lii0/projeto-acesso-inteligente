@@ -38,7 +38,7 @@ if (@$paginaUrl && $usuarioLogado) {
   $alunoRetorno = $alunoObj->paginacao($idAluno);
   $listaAlunos = $alunoObj->ListaDeAluno();
   @include_once './view/header.php';
-  @include_once './view/listaDeAluno.php';
+  @include_once './view/listaAlunoCadastro.php';
   @include_once './view/footer.php';
 }
 
@@ -67,7 +67,7 @@ if (isset($_POST["submit"])) {
         @$exibirFormulario = true;
         $msgAlert = ' Imagem inserida com sucesso ';
         @include_once '../view/header.php';
-        @include_once '../view/listaDeAluno.php';
+        @include_once '../view/listaAlunoCadastro.php';
         @include_once '../view/footer.php';
         $uploadOk = 1;
       } else {
@@ -76,7 +76,7 @@ if (isset($_POST["submit"])) {
         @$exibirFormulario = true;
         $msgAlert = ' imagem não foi inserida ';
         @include_once '../view/header.php';
-        @include_once '../view/listaDeAluno.php';
+        @include_once '../view/listaAlunoCadastro.php';
         @include_once '../view/footer.php';
         $uploadOk = 0;
       }
@@ -97,7 +97,7 @@ if (isset($_POST['termo'])) {
     $alunoRetorno = $resultado_pesquisa;
     $exibirFormulario = true;
     @include_once '../view/header.php';
-    @include_once '../view/listaDeAluno.php';
+    @include_once '../view/listaAlunoCadastro.php';
    
 
   } elseif (empty($resultado_pesquisa)) {
@@ -107,29 +107,7 @@ if (isset($_POST['termo'])) {
     $exibir_paginacao = true;
     $msgAlert = 'Aluno não encontrado!';
     @include_once '../view/header.php';
-    @include_once '../view/listaDeAluno.php';
-  }
-}
-if (isset($_POST['alunos'])) {
-  $termo = $_POST['alunos'];
-  $exibir_paginacao = false;
-  $resultado_pesquisa = $alunoObj->buscarPorTermo($termo);
-  if (!empty($resultado_pesquisa)) {
-    $listaAlunos = $resultado_pesquisa;
-    $alunoRetorno = $resultado_pesquisa;
-    $exibirFormulario = true;
-    @include_once '../view/header.php';
-    @include_once '../view/listaTotal.php';
-   
-
-  } elseif (empty($resultado_pesquisa)) {
-    $alunoRetorno = $alunoObj->paginacao($idAluno);
-    $listaAlunos = $alunoObj->ListaDeAluno();
-    $exibirFormulario = true;
-    $exibir_paginacao = true;
-    $msgAlert = 'Aluno não encontrado!';
-    @include_once '../view/header.php';
-    @include_once '../view/listaTotal.php';
+    @include_once '../view/listaAlunoCadastro.php';
   }
 }
 // if($_POST){

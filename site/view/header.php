@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="<?= constant("URL_LOCAL_BASE")?>assets/css/cabecalho-rodape.css">
     <link rel="stylesheet" href="<?= constant("URL_LOCAL_BASE")?>assets/css/check-animacao.css">
     <link rel="stylesheet" href="<?= constant("URL_LOCAL_BASE")?>assets/css/card-cadastro-biometrico.css">
+    <link rel="stylesheet" href="<?= constant("URL_LOCAL_BASE")?>assets/css/ok.css">
+
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Acesso Inteligente ETE</title>
 </head>

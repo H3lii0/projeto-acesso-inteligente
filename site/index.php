@@ -66,6 +66,19 @@ if ($paginaUrl === 'acesso') {
 
     include_once './model/aluno.php';
     include_once './controller/listaAlunoController.php';
+    
+
+}
+elseif ($paginaUrl === 'lista-aluno2') {
+    if ($_GET && isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = null;
+    }
+
+    include_once './model/aluno.php';
+    include_once './controller/listaTotal.php';
+    
 
 }elseif ($paginaUrl === 'biometria') {
     if ($_GET && isset($_GET['idAluno'])) {
@@ -76,15 +89,27 @@ if ($paginaUrl === 'acesso') {
     include_once './model/aluno.php';
     include_once './model/biometria.php';
     include_once './controller/biometriaController.php';
-}elseif ($paginaUrl === 'cadastro'){
-    include_once './model/aluno.php';
-    include_once './controller/formularioCadastro.php';
 
 }elseif ($paginaUrl === 'formulario-cadastro'){
-    include_once './view/header.php';
-    include_once './view/formularioCadastroAluno.php';
-    include_once './view/footer.php';
-    
+    include_once './model/aluno.php';
+    include_once './controller/formularioCadastroController.php';
+
+}elseif ($paginaUrl === 'update'){
+    include_once './model/aluno.php';
+    include_once './controller/update.php';
+}
+elseif ($paginaUrl === 'lista-total'){
+    include_once './model/aluno.php';
+    include_once './controller/listaTotal.php';
+
+}elseif ($paginaUrl === 'listar'){
+    if ($_GET && isset($_GET['page'])) {
+        $page = $_GET['page'];
+    } else {
+        $page = null;
+    }
+    include_once './model/aluno.php';
+    include_once './controller/listaAlunoCadastroController.php';
 }
 else{
     include_once './view/header.php';

@@ -237,10 +237,10 @@ class Aluno
         }
     }
 
-    static public function editarAlunoPorId($idAluno, $matricula, $nome, $dataN, $sexo, $serie, $curso, $email, $telefone){
+    static public function editarAlunoPorId($id, $matricula, $nome, $dataN, $sexo, $serie, $curso, $email, $telefone){
         $pdo = Database::conexao();
-        $sql = "UPDATE aluno SET matricula = :matricula, nome = :nome, email = :email, dataN = :dataN, sexo = :sexo, serie = :serie,
-        curso = :curso, telefone = :telefone WHERE aluno.id = $idAluno";
+        $sql = "UPDATE aluno SET Matricula = :matricula, Nome = :nome, email = :email, Data_Nasc = :dataN, Sexo = :sexo, Serie = :serie,
+        Curso = :curso, Telefone = :telefone WHERE aluno.id = $id";
         $stmt = $pdo->prepare($sql);
         $stmt->bindValue(':matricula', $matricula);
         $stmt->bindValue(':nome', $nome);
@@ -250,6 +250,11 @@ class Aluno
         $stmt->bindValue(':serie', $serie);
         $stmt->bindValue(':curso', $curso);
         $stmt->bindValue(':telefone', $telefone);
-        return $result = $stmt->execute();
+        $result = $stmt->execute();
+        if ($result) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
